@@ -1,11 +1,9 @@
-
 name: Deploy React App
 
 on:
   push:
     branches:
       - main
-
   workflow_dispatch:
 
 permissions:
@@ -39,8 +37,6 @@ jobs:
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
-        with:
-          enablement: true
 
       - name: Upload Website
         uses: actions/upload-pages-artifact@v3
